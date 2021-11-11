@@ -1,0 +1,71 @@
+.titulo-crear{
+    margin: 1rem 40%;
+}
+.container-formulario{
+    margin: 1rem 18%;
+    @include telefono{
+        margin: 1rem 2%;
+    }
+
+    fieldset{
+        margin: 0.6rem 0.1rem;
+    }
+    .editor{
+        min-height: 10rem;
+        @include tablet{
+            min-height: 6rem; 
+        }
+        @include telefono{
+            min-height: 3.5rem;   
+        }
+    }
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="file"],
+    #contenido{
+        margin: 1rem 0.2rem;
+    }
+
+        form input[type="text"]{
+        width: 90%;
+    }
+    legend{
+        margin: 0.3rem 0;
+        font-size: 1rem;
+    }
+    label{
+        margin: 0.8rem 2rem 0.2rem 0.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+    textarea {
+        width: 90%;
+        resize: none;
+    }
+    button.boton-azul.tamaño{
+        font-size: 1rem;
+    }
+   
+    #ActualizarSeccion{
+        cursor: pointer;
+        text-transform:uppercase;
+        margin-left:2% ;
+    }
+}
+.mensaje{
+    background-color: #5fff2f6e;
+    font-weight: $bold;
+
+    border-radius: 2rem;
+    padding: 0.8rem  0.5rem;
+    @include telefono{
+        margin: 0.5rem 0;
+    }
+}
+.ocultar{
+    height: 0;
+    visibility: hidden;
+    //height: 0;
+}

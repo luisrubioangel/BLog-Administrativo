@@ -1,0 +1,31 @@
+{
+    "name": "luis/tecno-mcu",
+    "description": "es una pegina de servicio",
+    "require-dev": {
+        "yeszao/cache": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Luis\\TecnoMcu\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LUIS ANGEL RUBIO CANCHES",
+            "email": "luisrubioangel.2011@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.6",
+        "phpmailer/phpmailer": "^6.5",
+        "twilio/sdk": "^6.27"
+    },
+    "autoload":{ 
+      "psr-4":{
+          "Model\\":"./models",
+          "Controllers\\":"./controllers",
+          "MCV\\":"./"
+       
+    }
+}
+}

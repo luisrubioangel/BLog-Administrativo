@@ -1,0 +1,166 @@
+.form-admin{
+    padding: 2rem 0 0 0;
+    margin: 2rem  0 2rem 30%;
+    max-width: 35rem;
+    background-color: #0c0c0c1c;
+    @include tablet{
+        max-width: 25rem;
+        margin: 2rem  0 2rem 15%;
+        background-color: #312f2f3d;
+    }
+    @include telefono{
+        max-width: 14rem;
+        margin: 0rem;
+        background-color: #0a0a0a1e;
+        padding-left: 1.2rem;
+    }
+    form label{
+        color: $negro;
+        font-weight: bold;
+        margin: 2rem 4rem 1rem 2rem;
+        @include tablet{
+
+        }
+        @include telefono{
+            font-size: 0.96rem;
+            margin: 2rem 0rem 0rem 2rem;
+        }
+    }
+    
+    form input[type="password"],
+    form input[type="email"],
+    form input[type="text"]{
+      width:80%;
+      height: 1.8rem;
+      font-size: 0.9rem;
+      padding:3px 10px;
+      border:1px solid #f6f6f6;
+      border-radius:0.2rem;
+      background-color:#f6f6f6;
+      margin:1rem 0 1rem 3rem;
+      display:inline-block;
+
+      @include tablet{
+        width:50%;
+      }
+      
+      @include telefono{
+        width: 70%;
+        display: inline;
+        margin:0.5rem;
+       
+      }
+
+    }
+    form input[type="email"]{
+       // margin-left: 5rem;
+        @include desktop {
+             //margin-left: 5rem;
+             //margin-left: 48px;
+             
+        }
+       
+        @include telefono{
+            display: inline;
+            margin:0.5rem;
+            
+          }
+    }
+    form button{
+        margin-top: 2rem;
+        margin-left: 60%;
+        margin-bottom: 2rem;
+        background-color: #297bc9c7;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        @include telefono{
+          
+            margin-left:5rem;
+           
+          }
+    }
+  
+}
+.center{
+    margin-left: 6rem;
+    a{
+        margin-right: 3rem;
+    }
+    a:hover{
+        color: rgb(255, 255, 255);
+    }
+}
+input.boton-rojo.actualizar-eliminar{
+    background-color: #050505;
+    margin-right: 0rem;
+    font-size: 1.1rem;
+    transition: 0.8s;
+    //width:6rem;
+    &:hover{
+        background-color: #0505055e;
+        color: #494949;
+        filter: drop-shadow(0 10px 10px #0000005e);
+        //color: rgb(51, 51, 51);
+    }
+
+
+    
+}
+a.boton-verde.actualizar-eliminar{
+    margin-right: 0rem;
+    background-color: rgba(3, 110, 197, 0.808);
+    width:4.8rem;
+    font-size: 1.1rem;
+    transition: 0.8;
+    &:hover{
+        background-color: rgba(3, 110, 197, 0.363);
+        filter: drop-shadow(0 10px 10px #0000005e);
+        color: #494949;
+    }
+}
+.container-img{
+nav{
+ margin-left: 2.9rem;
+ text-align: center;
+ a{
+     margin-right: 0.9rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
+ }
+ a:hover{
+     color: rgba(185, 185, 174, 0.993);
+ }
+}
+
+}
+.errores{
+    background-color: #ff000044;
+    border-radius: 2rem;
+    padding: 0.8rem  0.5rem;
+    font-weight: $bold;
+    @include telefono{
+        margin: 0.5rem 0;
+    }
+}
+.center{
+    @include telefono{
+        margin: 0.5rem 1rem;
+    }
+}
+.medio{
+    text-align: center;
+    justify-content: center;
+}
+.registar-inmgen{
+  margin: 1.8rem 2rem 1.8rem 1.9rem;
+  @include telefono{
+      margin:  1.8rem 0rem 1.8rem 1.9rem;
+      width: 5.7rem;
+  }  
+}
